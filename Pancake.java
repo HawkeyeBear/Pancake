@@ -1,8 +1,6 @@
 public class Pancake {
 	// a Pancake is a tree node of a pancake tree
-	
 	String pancake; // string for representing each level of a pancake 
-	//String paths; //recording the path of each flip
 	int g; //actual cost
 	int h; //heuristic function
 	Pancake parents; // tree node which represent the upper level of the tree
@@ -14,7 +12,6 @@ public class Pancake {
 	
 	public Pancake(String input) {
 		this.pancake = input;
-		//this.paths = "";
 		this.g = 0;
 		this.h = 0;
 	}

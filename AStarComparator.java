@@ -9,6 +9,7 @@ public class AStarComparator implements Comparator<Pancake> {
 		if(actualCostA != actualCostB) {
 			return actualCostA - actualCostB;
 		}else {
+			//avoid tie-breaking
 			return Integer.valueOf(b.pancake) - Integer.valueOf(a.pancake);
 		}
 		//return 0;
