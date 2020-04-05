@@ -48,16 +48,8 @@ public class Algorithms {
 		PriorityQueue<Pancake> fringe = new PriorityQueue<Pancake>(new AStarComparator());
 		fringe.add(root); // initialize priority queue
 		//similar to DFS
-		while(!fringe.isEmpty()){
-						
+		while(!fringe.isEmpty()){			
 			Pancake tmp = fringe.poll();
-			
-			//heuristic(tmp);
-			//System.out.println(tmp);
-//			System.out.println(tmp.pancake);
-//			System.out.println(tmp.g);
-//			System.out.println(tmp.h);
-//			
 			if(tmp.pancake.equals("4321")) {
 				return tmp;
 			}
